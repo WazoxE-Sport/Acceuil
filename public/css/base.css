@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito';
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    z-index: 999;
+}
+
+.btn {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 13px 18px;
+    background: #f39c12;
+    border-radius: 3px;
+    border: 2px solid #f39c12;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    color: #f39c12;
+    background: transparent;
+}

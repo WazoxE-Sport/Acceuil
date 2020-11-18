@@ -1,0 +1,23 @@
+header.header__article {
+    height: 450px;
+    width: 100%;
+    background: rgb(62, 57, 107);
+    position: relative;
+}
+
+.header__article .header__texture {
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    top: 0;left: 0;
+    background: url() center no-repeat;
+    background-size: cover;
+    z-index: 1;
+    opacity: 0.4;
+}
+
+.article__view-container {
+    width: 60%;
+    margin: auto;
+    padding-top: 20px;
+}
