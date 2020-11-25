@@ -89,10 +89,13 @@
     border-radius: 5px;
     background: #fff;
     position: relative;
+    transition: background-color 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transform-origin: center;
 }
 
-.header__navbar-toggle-icons::before{top: 10px}
-.header__navbar-toggle-icons::after{top: -14px}
+.header__navbar-toggle-icons::before{top: 10px;}
+.header__navbar-toggle-icons::after{top: -14px;}
 
 .is-open .header__navbar--menu {
     transform: translateY(0);
@@ -130,6 +133,19 @@
     }
 }
 
+.header__navbar-toggle.active span{
+    background-color: transparent;
+} 
+
+.header__navbar-toggle.active span::before{
+    transform-origin: center;
+    transform: translateY(0px) rotateZ(40deg);
+}
+
+.header__navbar-toggle.active span::after{
+    transform: translateY(0px) rotateZ(-40deg);
+}
+
 .footer .footer-informations {
     text-align: center;
     margin-top: 30px;
@@ -150,3 +166,4 @@ MODAL
 .own-modale {
     padding-top: 120px;
 }
+
